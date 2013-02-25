@@ -29,7 +29,7 @@
                             }));
                     });
                     if (opts.value)
-                        $('.cflag-' + opts.value + '').addClass('cflag-selected');
+                        $('.cflag[title="' + opts.value + '"]').addClass('cflag-selected');
                 }
             });
         },
