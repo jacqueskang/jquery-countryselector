@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>jQuery.countrySelector</id>
-        <version>1.0.0.2</version>
+        <version>1.0.2</version>
         <title>jQuery Country Selector</title>
         <authors>Jia Kang</authors>
         <owners>Jia Kang</owners>
@@ -239,7 +239,7 @@
         <file src="css\country-flags\ZAF.png" target="content\css\country-flags\ZAF.png" />
         <file src="css\country-flags\ZMB.png" target="content\css\country-flags\ZMB.png" />
         <file src="css\country-flags\ZWE.png" target="content\css\country-flags\ZWE.png" />
-        <file src="css\jquery.countrySelector.1.0.0.css" target="content\css\jquery.countrySelector.1.0.0.css" />
-        <file src="js\jquery.countrySelector.1.0.0.js" target="content\js\jquery.countrySelector.1.0.0.js" />
+        <file src="css\jquery.countrySelector.1.0.2.css" target="content\css\jquery.countrySelector.1.0.2.css" />
+        <file src="js\jquery.countrySelector.1.0.2.js" target="content\js\jquery.countrySelector.1.0.2.js" />
     </files>
 </package>
