@@ -1,4 +1,9 @@
-This is a jQuery plugin which allows to create a country selector in your web page.
+This is a simple jQuery plugin which allows to create a country selector in your web page.
+Each option is shown as a 16x16 sized clickable flag image.
+Please find detailed example in the sample.html file.
 
+NuGet package available here: https://nuget.org/packages/jQuery.countrySelector/
+Sourceforge homepage: https://sourceforge.net/p/jquerycountryse/
+Github homepage: https://github.com/kylinwater/jQuery-Country-Selector/
 
-
+For any question please contact jia.kang.1982@gmail.com

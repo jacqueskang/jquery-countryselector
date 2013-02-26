@@ -12,7 +12,8 @@
         <summary>This is a simple jQuery plugin which allows to create a country selector on you web page.</summary>
         <releaseNotes>
 		v1.0.4
-		- 
+		- Fixed multiple control in same page issue
+		- Show country name as title
 		v1.0.3
 		- Included minimized js file
 		</releaseNotes>
