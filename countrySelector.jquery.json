@@ -1,0 +1,35 @@
+{
+    "name": "countrySelector",
+    "title": "jQuery Country Selector",
+    "description": "This is a simple jQuery plugin which allows to create a country selector in your web page.",
+    "keywords": [
+        "jQuery",
+        "country",
+        "selector"
+    ],
+    "version": "1.0.5",
+    "author": {
+        "name": "Jia Kang",
+        "url": "https://github.com/kylinwater/jQuery-Country-Selector/"
+    },
+    "maintainers": [
+        {
+            "name": "Jia Kang",
+            "email": "jia.kang.1982@gmail.com",
+            "url": "http://kylinwater.objectis.net/"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/kylinwater/jQuery-Country-Selector/blob/master/COPYRIGHT"
+        }
+    ],
+    "bugs": "https://github.com/kylinwater/jQuery-Country-Selector/issues",
+    "homepage": "https://github.com/kylinwater/jQuery-Country-Selector",
+    "docs": "https://sourceforge.net/p/jquerycountryse/wiki/jQuery%20Country%20Selector/",
+    "download": "https://sourceforge.net/projects/jquerycountryse/files/latest/download",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
