@@ -7,7 +7,7 @@
         "country",
         "selector"
     ],
-    "version": "1.0.5",
+    "version": "1.0.5.3",
     "author": {
         "name": "Jia Kang",
         "url": "https://github.com/kylinwater/jQuery-Country-Selector/"
