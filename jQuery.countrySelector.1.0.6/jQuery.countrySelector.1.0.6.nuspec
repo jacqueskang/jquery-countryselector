@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>jQuery.countrySelector</id>
+    <version>1.0.6</version>
+    <title>jQuery Country Selector</title>
+    <authors>Jia Kang</authors>
+    <owners>Jia Kang</owners>
+    <projectUrl>https://sourceforge.net/p/jquerycountryse/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is a simple jQuery plugin which allows to create a country selector on you web page. Please visit https://sourceforge.net/p/jquerycountryse/wiki to see examples</description>
+    <summary>This is a simple jQuery plugin which allows to create a country selector on you web page.</summary>
+    <releaseNotes>
+	  v1.0.6
+	  - Groupe country flag images into a single one
+      v1.0.5
+      - Fixed issue when control is re-initialized
+      - Fixed layout issue by using div instead of li
+      v1.0.4
+      - Fixed multiple control in same page issue
+      - Show country name as title
+      v1.0.3
+      - Included minimized js file
+    </releaseNotes>
+    <copyright>Jia Kang</copyright>
+    <language>en-US</language>
+    <tags>jQuery Country Selector</tags>
+  </metadata>
+  <files>
+    <file src="css\countries.png" target="content\css\countries.png" />
+    <file src="css\jquery.countrySelector.1.0.6.css" target="content\css\jquery.countrySelector.1.0.6.css" />
+    <file src="js\jquery.countrySelector.1.0.6.min.js" target="content\js\jquery.countrySelector.1.0.6.min.js" />
+  </files>
+</package>
