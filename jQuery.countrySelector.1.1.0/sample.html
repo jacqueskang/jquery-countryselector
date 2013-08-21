@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Country Selector - Samples</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.countrySelector.1.1.0.css" />
+    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.countrySelector.1.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#country').countrySelector({
+                countries: ['FRA', 'DEU', 'ITA', 'FIN', 'SWE', 'CHN', 'JPN', 'KOR', 'GBR'],
+                value: 'FRA',
+                onSelected: function (country, fullname) {
+                    $('#text').text('Selected country: ' + country + ' (' + fullname + ')');
+                }
+            });
+
+            $('#country-select').countrySelector({
+                countries: ['HRV', 'LUX', 'VGB', 'CUW', 'BHS', 'IRL'],
+                value: 'CUW',
+                onSelected: function (country, fullname) {
+                }
+            });
+
+            $('#get-selected-country').click(function () {
+                var country = $('#country').countrySelector('value');
+                alert('Selected country is: ' + country);
+            });
+
+            $('#set-FRA').click(function () {
+                $('#country').countrySelector('value', 'FRA');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1>jQuery Country Selector - Samples</h1>
+        <h2>Div constructor</h2>
+        <div id="country" style="width: 150px;">
+        </div>
+        <span id="text"></span>
+        <pre>
+            ('#country').countrySelector({
+                countries: ['FRA', 'DEU', 'ITA', 'FIN', 'SWE', 'CHN', 'JPN', 'KOR', 'GBR'],
+                onSelected: function (country, fullname) {
+                    $('#text').text('Selected country: ' + country + ' (' + fullname + ')');
+                }
+            });
+        </pre>
+        <h2>Select constructor</h2>
+        <select id="country-select">
+        </select>
+        <pre>
+            TODO
+        </pre>
+        <h2>Get function</h2>
+        <button id="get-selected-country">
+            Get selected country
+        </button>
+        <pre>
+            $('#get-selected-country').click(function () {
+                var country = $('#country').countrySelector('value');
+                alert('Selected country is: ' + country);
+            });
+        </pre>
+        <h2>Set function</h2>
+        <button id="set-FRA">
+            Select "FRA"
+        </button>
+        <pre>
+            $('#set-FRA').click(function () {
+                $('#country').countrySelector('value', 'FRA');
+            });
+        </pre>
+    </div>
+</body>
+</html>
