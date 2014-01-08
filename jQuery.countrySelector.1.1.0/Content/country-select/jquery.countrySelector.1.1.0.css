@@ -1,4 +1,4 @@
-﻿.country-selector .cflag {
+﻿div.country-selector .cflag {
     width: 20px;
     height: 16px;
     margin: 5px 0px 5px 5px;
@@ -6,29 +6,6 @@
     vertical-align: middle;
     cursor: pointer;
     background-image: url('countries.png');
-}
-
-    .country-selector .cflag:hover {
-        box-shadow: 0px 0px 5px 2px greenyellow;
-    }
-
-.country-selector .cflag-label {
-    height: 16px;
-    margin: 5px 0px 5px 10px;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: small;
-}
-
-.country-selector .cflag-opt {
-    background-image: url('countries.png');
-    width: 20px;
-    height: 16px;
-    padding-left: 20px;
-}
-
-.country-selector .cflag-selected {
-    box-shadow: 0px 0px 5px 2px lime !important;
 }
 
 .ABW {

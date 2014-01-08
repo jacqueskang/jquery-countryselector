@@ -1,10 +1,4 @@
 ﻿(function ($) {
-    var defaults = {
-        countries: [],
-        value: null,
-        showLabel: true,
-        onSelected: function (country, fullname) { }
-    };
 
     var _cnames = {
         ABW: 'Aruba',
@@ -259,7 +253,7 @@
 
     var methods = {
         init: function (options) {
-            var opts = $.extend({}, defaults, options);
+            var opts = $.extend({}, $.fn.countrySelector.defaults, options);
 
             return this.each(function () {
                 var $this = $(this);
@@ -278,13 +272,15 @@
                         var cname = _cnames[cc];
                         if (!cname)
                             cname = cc;
-                        var div = $('<div class="cflag ' + cc + '" title="' + cname + '""></div>')
+                        var div = $("<div></div>")
+                            .addClass("cflag " + cc)
+                            .attr("title", cname)
                             .click(function () {
                                 if ($(this).hasClass('cflag-selected'))
                                     return;
                                 $(this).siblings().removeClass('cflag-selected');
                                 $(this).addClass('cflag-selected');
-                                opts.onSelected.call(this, cc, cname);
+                                opts.onSelected.call($this.get(0), cc, cname);
                                 label.data('cname', cname).text(cname);
                             })
                             .hover(function () {
@@ -298,8 +294,6 @@
                         }
                         $this.append(div);
                     });
-                    if (opts.showLabel)
-                        $this.append(($('<div class="cflag-label"></div>').append(label)));
                 }
                 else if ($this.is('select')) {
                     $this.empty();
@@ -307,19 +301,12 @@
                         var cname = _cnames[cc];
                         if (!cname)
                             cname = cc;
-                        var option = $('<option class="cflag-opt ' + cc + '" value="' + cc + '">' + cname + '</option>')
-                            .click(function () {
-                                if ($(this).hasClass('cflag-selected'))
-                                    return;
-                                $(this).siblings().removeClass('cflag-selected');
-                                $(this).addClass('cflag-selected');
-                                opts.onSelected.call(this, $(this).data('cc'), cname);
-                            });
-                        $this.append(option);
+                        $this.append('<option value="' + cc + '">' + cname + '</option>');
                     });
-                    if (opts.value) {
-                        $this.val(opts.value);
-                    }
+                    $this.change(function () {
+                        var cc = $(this).val();
+                        opts.onSelected.call(this, $(this).val(), _cnames[cc]);
+                    }).val(opts.value);
                 }
             });
         },
@@ -356,4 +343,11 @@
             $.error('Method ' + method + ' does not exist on jQuery.countrySelector');
         }
     }
+
+    $.fn.countrySelector.defaults = {
+        countries: [],
+        value: null,
+        onSelected: function (country, fullname) { }
+    };
+
 })(jQuery);

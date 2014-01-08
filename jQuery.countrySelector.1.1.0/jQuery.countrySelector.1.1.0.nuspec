@@ -11,8 +11,11 @@
     <description>This is a simple jQuery plugin which allows to create a country selector on you web page. Please visit https://sourceforge.net/p/jquerycountryse/wiki to see examples</description>
     <summary>This is a simple jQuery plugin which allows to create a country selector on you web page.</summary>
     <releaseNotes>
-	  v1.0.6
-	  - Groupe country flag images into a single one
+      v1.1.0
+      - Added combo mode
+      - Rename folders
+      v1.0.6
+      - Groupe country flag images into a single one
       v1.0.5
       - Fixed issue when control is re-initialized
       - Fixed layout issue by using div instead of li
@@ -27,8 +30,9 @@
     <tags>jQuery Country Selector</tags>
   </metadata>
   <files>
-    <file src="css\countries.png" target="content\css\countries.png" />
-    <file src="css\jquery.countrySelector.1.0.6.css" target="content\css\jquery.countrySelector.1.0.6.css" />
-    <file src="js\jquery.countrySelector.1.0.6.min.js" target="content\js\jquery.countrySelector.1.0.6.min.js" />
+    <file src="Content\country-select\countries.png" target="Content\country-select\countries.png" />
+    <file src="Content\country-select\jquery.countrySelector.1.1.0.css" target="Content\country-select\jquery.countrySelector.1.1.0.css" />
+    <file src="Scripts\jquery.countrySelector.1.1.0.js" target="Scripts\jquery.countrySelector.1.1.0.js" />
+    <file src="Scripts\jquery.countrySelector.1.1.0.min.js" target="Scripts\jquery.countrySelector.1.1.0.min.js" />
   </files>
 </package>
