@@ -1,0 +1,257 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Country Selector - Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="css/jquery-countryselector.min.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <p class="navbar-brand">
+                    jQuery Country Selector - Demo<br />
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Quick setup
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select data-role=&quot;country-selector&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <hr />
+                            <select data-role="country-selector"></select>
+                        </div>
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select id=&quot;quick-setup&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <br />
+                            <code>
+                                $(&quot;#quick-setup&quot;).countrySelector();
+                            </code>
+                            <hr />
+                            <select id="quick-setup"></select>
+                            <script>
+                                $(document).ready(function () {
+                                    $("#quick-setup").countrySelector();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    With initial value
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select value=&quot;FRA&quot; data-role=&quot;country-selector&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <hr />
+                            <select value="FRA" data-role="country-selector"></select>
+                        </div>
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select id=&quot;with-initial-value&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <br />
+                            <code>
+                                $(&quot;#with-initial-value&quot;).countrySelector({ value: &#39;FRA&#39; });
+                            </code>
+                            <hr />
+                            <select id="with-initial-value"></select>
+                            <script>
+                                $(document).ready(function () {
+                                    $("#with-initial-value").countrySelector({ value: 'FRA' });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Using <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3" target="_blank">ISO 3166-1 alpha-3</a> code (default)
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select value=&quot;CHN&quot; data-role=&quot;country-selector&quot; data-code-mode=&quot;alpha3&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <hr />
+                            <select value="CHN" data-role="country-selector" data-code-mode="alpha3"></select>
+                        </div>
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select id=&quot;alpha3&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <br />
+                            <code>
+                                $(&quot;#alpha3&quot;).countrySelector({ value: &quot;CHN&quot;, codeMode: &quot;alpha3&quot; });
+                            </code>
+                            <hr />
+                            <select id="alpha3"></select>
+                            <script>
+                                $(document).ready(function () {
+                                    $("#alpha3").countrySelector({ value: "CHN", codeMode: "alpha3" });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Using <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-2</a> code
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select value=&quot;US&quot; data-role=&quot;country-selector&quot; data-code-mode=&quot;alpha2&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <hr />
+                            <select value="US" data-role="country-selector" data-code-mode="alpha2"></select>
+                        </div>
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select id=&quot;alpha2&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <br />
+                            <code>
+                                $(&quot;#alpha2&quot;).countrySelector({ value: &quot;US&quot;, codeMode: &quot;alpha2&quot; });
+                            </code>
+                            <hr />
+                            <select id="alpha2"></select>
+                            <script>
+                                $(document).ready(function () {
+                                    $("#alpha2").countrySelector({ value: "US", codeMode: "alpha2" });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Using <a href="https://en.wikipedia.org/wiki/ISO_3166-1_numeric" target="_blank">ISO 3166-1 numeric</a> code
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select value=&quot;40&quot; data-role=&quot;country-selector&quot; data-code-mode=&quot;numeric&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <hr />
+                            <select value="40" data-role="country-selector" data-code-mode="numeric"></select>
+                        </div>
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select id=&quot;numeric&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <br />
+                            <code>
+                                $(&quot;#numeric&quot;).countrySelector({ value: 40, codeMode: &quot;numeric&quot; });
+                            </code>
+                            <hr />
+                            <select id="numeric"></select>
+                            <script>
+                                $(document).ready(function () {
+                                    $("#numeric").countrySelector({ value: 40, codeMode: "numeric" });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Specify available countries
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select data-role=&quot;country-selector&quot; data-value-set=&quot;FRA ITA CHE DEU&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <hr />
+                            <select data-role="country-selector" data-value-set="FRA ITA CHE DEU"></select>
+                        </div>
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select id=&quot;value-set&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <br />
+                            <code>
+                                $(&quot;#value-set&quot;).countrySelector({ valueSet: [&quot;FRA&quot;, &quot;ITA&quot;, &quot;CHE&quot;, &quot;DEU&quot;] });
+                            </code>
+                            <hr />
+                            <select id="value-set"></select>
+                            <script>
+                                $(document).ready(function () {
+                                    $("#value-set").countrySelector({ valueSet: ["FRA", "ITA", "CHE", "DEU"] });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Showing country flags (experimental)
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select data-role=&quot;country-selector&quot; data-show-flag=&quot;true&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <hr />
+                            <select data-role="country-selector" data-show-flag="true"></select>
+                        </div>
+                        <div class="col-md-6">
+                            <code>
+                                &lt;select id=&quot;flag&quot;&gt;&lt;/select&gt;
+                            </code>
+                            <br />
+                            <code>
+                                $(&quot;#flag&quot;).countrySelector({ showFlag: true });
+                            </code>
+                            <hr />
+                            <select id="flag"></select>
+                            <script>
+                                $(document).ready(function () {
+                                    $("#flag").countrySelector({ showFlag: true });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            &copy; <a href="https://www.linkedin.com/in/jacqueskang" target="_blank">Jacques KANG</a> 2015
+        </footer>
+    </div>
+    <script src="js/jquery.countryselector.js"></script>
+</body>
+</html>

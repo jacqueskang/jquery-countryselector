@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>jQuery.countrySelector</id>
+    <version>2.0.0.0</version>
+    <title>jQuery Country Selector</title>
+    <authors>Jacques Kang</authors>
+    <owners>Jacques Kang</owners>
+    <projectUrl>https://sourceforge.net/p/jquerycountryse/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple jQuery plugin to show country selector drop down list. Please visit http://kylinwater.crealyx.fr/jquery-country-selector/ for demo.</description>
+    <summary>A simple jQuery plugin to show country selector drop down list.</summary>
+    <releaseNotes>
+      v2.0.0
+      - API re-design
+      v1.1.0
+      - Added combo mode
+      - Rename folders
+      v1.0.6
+      - Groupe country flag images into a single one
+      v1.0.5
+      - Fixed issue when control is re-initialized
+      - Fixed layout issue by using div instead of li
+      v1.0.4
+      - Fixed multiple control in same page issue
+      - Show country name as title
+      v1.0.3
+      - Included minimized js file
+    </releaseNotes>
+    <copyright>Jacques Kang</copyright>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="jQuery" version="1.10.1" />
+    </dependencies>
+    <tags>jQuery Country Selector</tags>
+  </metadata>
+  <files>
+    <file src="css\countries.png" target="content\Content\country-select\countries.png" />
+    <file src="css\jquery-countryselector.min.css" target="content\Content\country-select\jquery.countryselector.min.css" />
+    <file src="js\jquery.countryselector.js" target="content\Scripts\jquery.countryselector.js" />
+    <file src="js\jquery.countrySelector.es5.min.js" target="content\Scripts\jquery.countryselector.min.js" />
+  </files>
+</package>
