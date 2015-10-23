@@ -1,7 +1,6 @@
 This is a simple jQuery plugin which allows to create a country selector in your web page.
-Please find detailed example in the sample.html file.
 
-NuGet package available here: https://nuget.org/packages/jQuery.countrySelector/
-Sourceforge homepage: https://sourceforge.net/p/jquerycountryse/
+Demo: http://kylinwater.crealyx.fr/jquery-country-selector/
+NuGet package: https://nuget.org/packages/jQuery.countrySelector/
 
-For any question please contact jia.kang.1982@gmail.com
+For any question please contact jkang.perso@gmail.com
